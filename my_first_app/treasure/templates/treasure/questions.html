@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>
+Test Your Memory
+</title>
+<style>
+#box{
+text-align:center;
+position:relative;
+top:350px;
+left:470px;
+border:solid 10px;
+width:30.3%;
+height:7.9%;
+border-width:10px;
+border-radius:10px;
+
+}
+#question{
+text-align:center;
+position:relative;
+top:250px;}
+#box input{
+width:407px;
+height:51.8px;
+border-radius:5px;
+}
+#submit{
+ display: block;
+  width: 40%;
+  border: none;
+  background-color: #7a1c86;
+  color: #eaeadd;
+  padding: 20px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  position:relative;
+  left:20px;
+  top:20px;
+ 
+}
+#submit:hover {
+  background-color: #440824;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+<div id="question">
+
+
+<h1>{{q}}</h1>
+
+</div>
+<div id="box">
+<form action="/iscorrect1" method="get">
+<input type="text" name="ans" placeholder="Type Your Answer">
+<input type="submit" id="submit" value="Check Your Answer">
+</form>
+</div>
+</body>
+</html>
